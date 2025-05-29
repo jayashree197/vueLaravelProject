@@ -1,61 +1,86 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Laravel/Vue Project
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Overview
+This is a Laravel and Vue.js project developed to meet the requirements for the Code Test. The application provides an admin dashboard where users can manage companies and employees. It includes features like:
 
-## About Laravel
+User authentication: Login and logout functionality.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Dashboard: Displays company and employee statistics.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Company Management: List, create, and edit companies.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Employee Management: Create, delete employees, and manage their relationship with companies.
 
-## Learning Laravel
+Features
+1. Login Screen:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Users can log in using Laravel's built-in authentication system.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+After successful login, users are redirected to the admin dashboard.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. Admin Dashboard:
 
-## Laravel Sponsors
+Displays the total number of companies and employees in the database.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+The dashboard gives an overview of key statistics.
 
-### Premium Partners
+3. Company Management:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+View the list of all companies.
 
-## Contributing
+Create new companies with relevant information (e.g., Name, ABN, Email, Address).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Edit company details after selection from the list.
 
-## Code of Conduct
+After editing a company, you can add employees linked to the company.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. Employee Management:
 
-## Security Vulnerabilities
+Employees are listed under each company.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+You can create a new employee and link them to a specific company.
 
-## License
+You can delete employees completely from the database.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The employee deletion will remove the record from the system (not just unlink the employee).
+
+Tech Stack
+Backend: Laravel 9.x
+
+Frontend: Vue.js 3.x
+
+UI Framework: Tailwind CSS , Bootstrap
+
+Authentication: Laravel Breez
+
+Database: MySQL 
+
+How It Works
+Login Flow:
+
+Upon opening the app, users will be prompted to log in via the Login Screen.
+
+Once authenticated, the app redirects the user to the Admin Dashboard.
+
+Admin Dashboard:
+
+Displays statistics on the total number of companies and employees.
+
+The user can access company management and employee management features from the dashboard.
+
+Managing Companies:
+
+Users can go to the Companies Page to view, create, and edit company records.
+
+After editing a company, users can manage employees associated with the company.
+
+Managing Employees:
+
+The user can access the Employee List from the company edit page.
+
+From the employee list, users can create new employees and delete existing ones.
+
+
+
+
+
