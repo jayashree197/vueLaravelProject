@@ -14,26 +14,26 @@ This project is a Laravel and Vue.js web app for managing companies and employee
 ### Tech Stack:
 
 
-- **Backend: Laravel 9.x**
-- **Frontend: Vue.js 3.x**
-- **UI Framework: Tailwind CSS, Bootstrap**
-- **Auth System: Laravel Breeze**
-- **Database: MySQL**
+- **Backend:** Laravel 9.x
+- **Frontend:** Vue.js 3.x
+- **UI Framework:** Tailwind CSS, Bootstrap
+- **Auth System:** Laravel Breeze
+- **Database:** MySQL
 
 
 ### How It Works:
 
 **1. Login Flow:**
-- **Users log in and are redirected to the admin dashboard.**
+- Users log in and are redirected to the admin dashboard.
 
 **2. Admin Dashboard:**
-- **Displays company and employee statistics with navigation links.**
+- Displays company and employee statistics with navigation links.
 
 **3. Managing Companies:**
-- **Add/edit companies, then manage associated employees.**
+- Add/edit companies, then manage associated employees.
 
 **4. Managing Employees:**
-- **Add or permanently delete employees under specific companies.**
+- Add or permanently delete employees under specific companies.
 
 
 
@@ -41,29 +41,28 @@ This project is a Laravel and Vue.js web app for managing companies and employee
 
 **1. Clone the Repo:**
 
-- **git clone https://github.com/jayashree197/vueLaravelProject**
-- **cd vueLaravelProject**
-- **git checkout my-new-branch**
+- git clone https://github.com/jayashree197/vueLaravelProject
+- cd vueLaravelProject
 
 
 **2.	Backend Setup:**
 
-- **Install PHP dependencies: composer install**
-- **Set up .env file and configure MySQL.**
-- **Generate app key: php artisan key:generate**
-- **Migrate DB: php artisan migrate**
+- Install PHP dependencies: composer install
+- Set up .env file and configure MySQL.
+- Generate app key: php artisan key:generate
+- Migrate DB: php artisan migrate
 
 
 **3.	Frontend Setup:**
-- **Install Node dependencies: npm install**
-- **Compile assets: npm run dev**
+- Install Node dependencies: npm install
+- Compile assets: npm run dev
 
 **4.	Run the App:**
-- **Start backend: php artisan serve (http://localhost:8000)**
-- **Start frontend: npm run dev (http://localhost:8080)**
+- **Start backend:** php artisan serve (http://localhost:8000)
+- **Start frontend:** npm run dev (http://localhost:8080)
 
 ### Troubleshooting:
-- **Ensure Composer and Node.js are installed.**
-- **Check .env file for database settings.**
-- **Make sure MySQL is running.**
+- Ensure **Composer** and **Node.js** are installed.
+- Check **.env** file for database settings.
+- Make sure **MySQL** is running.
 
