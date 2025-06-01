@@ -22,6 +22,7 @@
           <tr class="bg-gray-600 text-gray-100">
             <th class="px-4 py-2 text-left font-semibold border border-gray-300">Employee Name</th>
             <th class="px-4 py-2 text-left font-semibold border border-gray-300">Email</th>
+            <th class="px-4 py-2 text-left font-semibold border border-gray-300">Address</th>
             <th class="px-4 py-2 text-left font-semibold border border-gray-300">Actions</th>
           </tr>
         </thead>
@@ -29,6 +30,7 @@
           <tr v-for="employee in employees" :key="employee.id" class="border-b">
             <td class="px-4 py-2 border border-gray-300">{{ employee.first_name }} {{ employee.last_name }}</td>
             <td class="px-4 py-2 border border-gray-300">{{ employee.email }}</td>
+            <td class="px-4 py-2 border border-gray-300">{{ employee.address }}</td>
             <td class="px-4 py-2 border border-gray-300">
               <button @click="deleteEmployee(employee.id)" class="btn-danger hover:bg-red-700 transition-all">Delete</button>
             </td>

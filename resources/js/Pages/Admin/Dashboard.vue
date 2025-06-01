@@ -20,7 +20,7 @@
 
         <!-- Employees Box -->
         <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
-          <p class="text-gray-700 text-xl font-semibold">Total Employeesgggh</p>
+          <p class="text-gray-700 text-xl font-semibold">Total Employees</p>
           <p class="text-4xl font-bold text-green-600 mt-2">{{ employeesCount }}</p>
         </div>
       </div>
